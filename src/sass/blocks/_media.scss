@@ -18,12 +18,19 @@
          width: 400px;
       }
    }
+   .cprengi {
+      &__grid {
+         grid-template: repeat(2, 255px) / repeat(2, 360px);
+         justify-content: center;
+         row-gap: 30px;
+      }
+   }
 }
 
 @media (max-width: 992px) {
    .container {
       width: 748px;
-      padding: 0 20px 0 20px;
+      padding: 0 10px 0 10px;
    }
    .firstSc {
       &__menu {
@@ -37,6 +44,12 @@
       &__left {
          margin: 40px 30px 0 0;
          width: 600px;
+      }
+   }
+   .cprengi {
+      &__grid {
+         column-gap: 5px;
+         row-gap: 5px;
       }
    }
 }
@@ -71,6 +84,12 @@
          width: 350px;
       }
    }
+   .cprengi {
+      &__grid {
+         grid-template: repeat(3, 255px) / repeat(1, 360px);
+         row-gap: 20px;
+      }
+   }
 }
 
 @media (max-width: 576px) {
@@ -101,6 +120,17 @@
       &__left {
          margin: 40px 30px 0 0;
          width: 350px;
+      }
+   }
+   .cprengi {
+      &__grid {
+         grid-template: repeat(3, 212px) / repeat(1, 300px);
+         row-gap: 20px;
+         div {
+            p {
+               transform: translateY(300%);
+            }
+         }
       }
    }
 }

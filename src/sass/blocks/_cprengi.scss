@@ -1,0 +1,51 @@
+.cprengi {
+   &__grid {
+      display: grid;
+      margin-top: 79px;
+      grid-template: repeat(1, 255px) / repeat(3, 360px);
+      column-gap: 30px;
+      div {
+         height: 100%;
+         width: 100%;
+         text-align: center;
+         border: 1px solid #ececec;
+         p {
+            transform: translateY(370%);
+         }
+      }
+   }
+   &__item1 {
+      background: url("../../icons/С_PRENGI/cp1.png") center center/cover
+         no-repeat;
+   }
+   &__item2 {
+      background: url("../../icons/С_PRENGI/cp2.png") center center/cover;
+   }
+   &__item3 {
+      background: url("../../icons/С_PRENGI/cp3.png") center center/cover
+         no-repeat;
+   }
+   &__item4 {
+      background: url("../../icons/С_PRENGI/cp4.png") center center/cover
+         no-repeat;
+   }
+   &__item5 {
+      background: url("../../icons/С_PRENGI/cp5.png") center center/cover
+         no-repeat;
+   }
+   &__item6 {
+      background: url("../../icons/С_PRENGI/cp6.png") center center/cover
+         no-repeat;
+   }
+   &__arrow {
+      margin: 50px auto;
+      img {
+         display: block;
+         margin: 0 auto;
+      }
+   }
+   h2 {
+      font-size: 48.1px;
+      text-align: center;
+   }
+}
