@@ -1,19 +1,23 @@
 .header {
    background-color: #ffffff;
+   box-sizing: border-box;
    &__grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: 170px 198px 206px 212px 228px;
       margin-top: 20px;
+      justify-content: center;
+      column-gap: 30px;
    }
    &__item {
       display: flex;
       img {
-         padding-top: 8px;
          margin-right: 11px;
       }
       h2,
       p {
-         margin-right: 30px;
+         margin: 0;
+         padding: 1px;
+         width: 100%;
       }
    }
 }

@@ -14,7 +14,10 @@
    width: 1140px;
 }
 
+@import "blocks/title";
+@import "blocks/button";
 @import "blocks/header";
+@import "blocks/firstScreen";
 
 @import "blocks/forms";
 @import "blocks/media";

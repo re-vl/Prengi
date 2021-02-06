@@ -1,7 +1,6 @@
 {
-  "name": "Pengi",
+  "name": "pengi",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,5 +23,14 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rva7171/Prengi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rva7171/Prengi/issues"
+  },
+  "homepage": "https://github.com/rva7171/Prengi#readme",
+  "description": ""
 }

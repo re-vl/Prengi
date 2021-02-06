@@ -1,0 +1,43 @@
+.firstSc {
+   margin-top: 19px;
+   padding-top: 39px;
+   min-height: 700px;
+   background: url("../../img/1st_screen/1scr_bg.png") center center/cover
+      no-repeat;
+   &__head {
+      display: flex;
+      justify-content: space-between;
+      div {
+         margin: 0 auto 0 0;
+      }
+   }
+   &__menu {
+      display: flex;
+      list-style-type: none;
+      margin: 25px 0 0 auto;
+      li {
+         margin-left: 50px;
+         a {
+            font-size: 13px;
+            color: #ffffff;
+         }
+      }
+   }
+   &__bottom {
+      display: flex;
+   }
+   &__left {
+      margin: 133px 186px 0 0;
+      width: 526px;
+      h2,
+      p {
+         color: #ffffff;
+      }
+   }
+   &__right {
+      margin-top: 55px;
+      img {
+         width: 100%;
+      }
+   }
+}

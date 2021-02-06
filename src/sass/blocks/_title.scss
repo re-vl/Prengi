@@ -1,0 +1,25 @@
+.title {
+   &__title-900 {
+      font-size: 42px;
+      line-height: 48px;
+      font-weight: 900;
+      color: #ffffff;
+   }
+   &__title-700 {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 700;
+      color: $title-color;
+   }
+
+   &__title-400 {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 400;
+      color: #ffffff;
+   }
+   &__text-300 {
+      font-size: 12px;
+      font-weight: 300;
+   }
+}
