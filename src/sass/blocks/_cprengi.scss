@@ -1,7 +1,7 @@
 .cprengi {
    &__grid {
+      margin: 79px 0;
       display: grid;
-      margin-top: 79px;
       grid-template: repeat(1, 255px) / repeat(3, 360px);
       column-gap: 30px;
       div {

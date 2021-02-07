@@ -1,28 +1,4 @@
 $(document).ready(function () {
-   $(".slider").slick({
-      arrows: true,
-      slidesToShow: 1,
-      autoplay: false,
-      speed: 600,
-      autoplaySpeed: 800,
-      adaptiveHeight: true,
-      centerMode: false,
-      responsive: [
-         {
-            breakpoint: 768,
-            settings: {
-               slidesToShow: 1,
-            },
-         },
-         {
-            breakpoint: 576,
-            settings: {
-               slidesToShow: 1,
-            },
-         },
-      ],
-   });
-
    // Модальные окна
 
    $("[data-modal=general]").on("click", function () {
@@ -100,3 +76,29 @@ $(document).ready(function () {
       return false;
    });
 });
+
+// slider
+let btnPrev = document.querySelector("#gallery .buttons .prev");
+let btnNext = document.querySelector("#gallery .buttons .next");
+let images = document.querySelectorAll("#gallery .photos img");
+
+let i = 0; // номер текущей картинки, на экране
+
+btnPrev.onclick = function () {
+   images[i].style.display = "none";
+   i = i - 1;
+   if (i < 0) {
+      i = images.length - 1;
+   }
+   images[i].style.display = "block";
+};
+
+btnNext.onclick = function () {
+   images[i].style.display = "none";
+   i = i + 1;
+   if (i >= images.length) {
+      i = 0;
+   }
+   images[i].style.display = "block";
+};
+// slider end
