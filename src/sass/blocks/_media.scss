@@ -103,6 +103,12 @@
          height: 250px;
       }
    }
+   .advantage {
+      &__grid {
+         grid-template: repeat(6, 355px) / repeat(1, 570px);
+         justify-content: center;
+      }
+   }
 }
 
 @media (max-width: 768px) {
@@ -174,6 +180,12 @@
       }
       #gallery .photos img {
          height: 220px;
+      }
+   }
+   .advantage {
+      &__grid {
+         grid-template: repeat(6, 355px) / repeat(1, 530px);
+         justify-content: center;
       }
    }
 }
@@ -256,6 +268,20 @@
       }
       #gallery .photos img {
          height: 160px;
+      }
+   }
+   .advantage {
+      h2 {
+         margin-top: 40px;
+         max-width: 300px;
+         font-size: 20px;
+      }
+      &__grid {
+         grid-template: repeat(6, 230px) / repeat(1, 300px);
+         justify-content: center;
+      }
+      p {
+         font-size: 18px;
       }
    }
 }

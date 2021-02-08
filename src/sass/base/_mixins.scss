@@ -1,0 +1,10 @@
+@mixin grid-item {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   p {
+      max-width: 345px;
+      text-align: center;
+   }
+}

@@ -1,0 +1,44 @@
+.advantage {
+   h2 {
+      margin-top: 81px;
+      max-width: 370px;
+      font-size: 30px;
+      text-align: center;
+      color: #393939;
+   }
+   &__grid {
+      margin-top: 44px;
+      display: grid;
+      grid-template: repeat(3, 355px) / repeat(2, 570px);
+   }
+   &__grid-item1 {
+      @include grid-item;
+      background: url("../../img/advantage/1_bg.png") center center/cover
+         no-repeat;
+   }
+   &__grid-item2 {
+      @include grid-item;
+      background: url("../../img/advantage/2_bg.png") center center/cover
+         no-repeat;
+   }
+   &__grid-item3 {
+      @include grid-item;
+      background: url("../../img/advantage/3_bg.png") center center/cover
+         no-repeat;
+   }
+   &__grid-item4 {
+      @include grid-item;
+      background: url("../../img/advantage/4_bg.png") center center/cover
+         no-repeat;
+   }
+   &__grid-item5 {
+      @include grid-item;
+      background: url("../../img/advantage/5_bg.png") center center/cover
+         no-repeat;
+   }
+   &__grid-item6 {
+      @include grid-item;
+      background: url("../../img/advantage/6_bg.png") center center/cover
+         no-repeat;
+   }
+}
