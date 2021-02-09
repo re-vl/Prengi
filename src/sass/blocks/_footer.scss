@@ -1,0 +1,36 @@
+.footer {
+   padding: 49px 0 40px 0;
+   min-height: 497px;
+   background-color: #0082a1;
+   &__grid {
+      display: grid;
+      grid-template: 320px/380px 265px 120px 115px;
+      column-gap: 80px;
+      justify-self: center;
+   }
+   h2,
+   p {
+      color: #ffffff;
+   }
+   p {
+      font-size: 14px;
+   }
+   &__grid-item {
+      img {
+         margin: 20px 0 20px auto;
+      }
+   }
+   &__delimetr {
+      margin-top: 44px;
+      max-width: 1171px;
+      height: 1px;
+      opacity: 0.3;
+      background-color: #ffffff;
+   }
+   &__law {
+      margin-top: 35px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 13px;
+   }
+}
