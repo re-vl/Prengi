@@ -1,4 +1,9 @@
 @media (max-width: 1400px) {
+   .solution {
+      .owl-carousel {
+         width: 70%;
+      }
+   }
    .footer {
       &__grid {
          display: grid;
@@ -40,18 +45,15 @@
       &__menu {
          max-width: 800px;
       }
-      #gallery {
-         .buttons .prev {
-            top: -250px;
-            left: -20px;
+      .owl-carousel {
+         .owl-nav button.owl-prev {
+            top: 45%;
+            left: 0;
          }
-         .buttons .next {
-            top: -250px;
-            right: -20px;
+         .owl-nav button.owl-next {
+            top: 45%;
+            right: 0;
          }
-      }
-      #gallery .photos img {
-         height: 400px;
       }
    }
    .advantage {
@@ -116,18 +118,11 @@
             font-size: 10px;
          }
       }
-      #gallery {
-         .buttons .prev {
-            top: -170px;
-            left: 0;
+      .owl-carousel {
+         width: 85%;
+         button.owl-dot {
+            margin: auto 30px;
          }
-         .buttons .next {
-            top: -170px;
-            right: 0;
-         }
-      }
-      #gallery .photos img {
-         height: 250px;
       }
    }
    .advantage {
@@ -235,22 +230,14 @@
             font-size: 10px;
          }
       }
-      #gallery {
-         .buttons .prev,
-         .next {
-            background-color: #ffffff;
+      .owl-carousel {
+         button.owl-dot {
+            display: none;
          }
-         .buttons .prev {
-            top: -150px;
-            left: -35px;
+         .owl-nav button.owl-prev,
+         .owl-nav button.owl-next {
+            display: none;
          }
-         .buttons .next {
-            top: -150px;
-            right: -35px;
-         }
-      }
-      #gallery .photos img {
-         height: 220px;
       }
    }
    .advantage {
@@ -366,26 +353,14 @@
             font-size: 10px;
          }
       }
-      #gallery {
-         margin: 30px auto;
-         .buttons {
-            margin: 20px auto;
+      .owl-carousel {
+         button.owl-dot {
+            display: none;
          }
-         .buttons .prev,
-         .next {
-            height: 40px;
+         .owl-nav button.owl-prev,
+         .owl-nav button.owl-next {
+            display: none;
          }
-         .buttons .prev {
-            top: 0px;
-            left: -50px;
-         }
-         .buttons .next {
-            top: 0px;
-            right: -50px;
-         }
-      }
-      #gallery .photos img {
-         height: 160px;
       }
    }
    .advantage {
