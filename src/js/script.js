@@ -78,27 +78,14 @@ $(document).ready(function () {
 });
 
 // slider
-let btnPrev = document.querySelector("#gallery .buttons .prev");
-let btnNext = document.querySelector("#gallery .buttons .next");
-let images = document.querySelectorAll("#gallery .photos img");
-
-let i = 0; // номер текущей картинки, на экране
-
-btnPrev.onclick = function () {
-   images[i].style.display = "none";
-   i = i - 1;
-   if (i < 0) {
-      i = images.length - 1;
-   }
-   images[i].style.display = "block";
-};
-
-btnNext.onclick = function () {
-   images[i].style.display = "none";
-   i = i + 1;
-   if (i >= images.length) {
-      i = 0;
-   }
-   images[i].style.display = "block";
-};
+$(function () {
+   // Owl Carousel
+   let owl = $(".owl-carousel");
+   owl.owlCarousel({
+      items: 1,
+      margin: 10,
+      loop: true,
+      nav: true,
+   });
+});
 // slider end
