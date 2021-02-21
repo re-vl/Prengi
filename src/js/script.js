@@ -1,7 +1,7 @@
 $(document).ready(function () {
    // Модальные окна
 
-   $("[data-modal=general]").on("click", function () {
+   $("[data-modal=firstSc]").on("click", function () {
       $(".overlay, #form1").fadeIn("slow"); // появление формы
    });
    //сокрытие всех форм по крестику
@@ -10,7 +10,7 @@ $(document).ready(function () {
    });
 
    //валидация форм
-   function validateForms(form) {
+   /*  function validateForms(form) {
       $(form).validate({
          rules: {
             name: {
@@ -42,7 +42,7 @@ $(document).ready(function () {
    validateForms("#consultForm form");
    validateForms("#questForm form");
 
-   $("input[name=phone]").mask("+7 (999) 999-99-99");
+   $("input[name=phone]").mask("+7 (999) 999-99-99"); */
 
    // Скролл в начало по иконке pageup
 

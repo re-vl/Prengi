@@ -142,13 +142,13 @@
 
       <section class="firstSc">
          <div class="container">
-            <div class="firstSc__head">
+            <div class="firstSc__head" id="up">
                <div><img src="icons/logo_prengi.png" alt="logo" /></div>
                <ul class="firstSc__menu title__title-700">
                   <li><a href="#">главная</a></li>
-                  <li><a href="#">модули</a></li>
-                  <li><a href="#">отрасли</a></li>
-                  <li><a href="#">о нас</a></li>
+                  <li><a href="#moduls">модули</a></li>
+                  <li><a href="#advantage">отрасли</a></li>
+                  <li><a href="#about">о нас</a></li>
                   <li><a href="#">наши обязательства</a></li>
                </ul>
             </div>
@@ -160,7 +160,9 @@
                   <p class="title__tltle-400">
                      PRENGI - Платформа для прозрачного управления бизнесом
                   </p>
-                  <button class="firstSc__btn btn">Получить доступ</button>
+                  <button data-modal="firstSc" class="firstSc__btn btn">
+                     Получить доступ
+                  </button>
                </div>
                <div class="firstSc__right">
                   <img src="img/1st_screen/tel.png" alt="phone" />
@@ -220,7 +222,7 @@
 
       <section class="solution">
          <div class="container">
-            <h2 class="title__title-900">
+            <h2 class="title__title-900" id="moduls">
                Prengi предоставляет экспертные решения для Вашей отрасли
             </h2>
             <div class="solution__menu">
@@ -258,7 +260,7 @@
 
       <section class="advantage">
          <div class="container">
-            <h2 class="title__title-900">
+            <h2 class="title__title-900" id="advantage">
                Преимущества Prengi для Вашей отрасли
             </h2>
             <div class="advantage__grid">
@@ -328,14 +330,14 @@
             Приступить очень просто! <br />
             Нужно получить доступ и начать работу!
          </h2>
-         <button class="btn">связаться с нами</button>
+         <button data-modal="firstSc" class="btn">связаться с нами</button>
       </section>
 
       <section class="footer">
          <div class="container">
             <div class="footer__grid">
                <div class="footer__grid-item">
-                  <h2 class="titile__title-700">О компании</h2>
+                  <h2 class="titile__title-700" id="about">О компании</h2>
                   <img src="icons/fotter_logo.png" alt="logo" />
                   <p class="title__text-300">
                      Lorem Ipsum - это текст-"рыба", часто используемый в печати
@@ -388,12 +390,12 @@
          </div>
       </section>
 
-      <!--   <div class="overlay">
+      <div class="overlay">
          <div class="modal" id="form1">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Заполните форму</div>
             <div class="modal__descr">и мы перезвоним вам</div>
-            <form class="feed-form feed-form_mt25" action="#">
+            <form class="feed-form" action="#">
                <input name="name" placeholder="Ваше имя" type="text" />
                <input name="phone" placeholder="Ваш телефон" />
                <input name="email" placeholder="Ваш E-mail" type="email" />
@@ -409,13 +411,12 @@
                Наш менеджер свяжется с вами в ближайшее время!
             </div>
          </div>
-      </div> -->
+      </div>
 
-      <!--      <a href="#up" class="pageup">
-         <img src="icons/arrow_up.svg" alt="up" />
-      </a> -->
+      <a class="pageup" href="#up">&#8634;</a>
 
-      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/jquery.validate.min.js"></script>
       <script src="js/jquery.maskedinput.min.js"></script>

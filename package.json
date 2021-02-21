@@ -1,5 +1,5 @@
 {
-  "name": "pengi",
+  "name": "Prengi",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
@@ -8,7 +8,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.3.0",
